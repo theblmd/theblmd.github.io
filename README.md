@@ -1,2 +1,3 @@
-# theblmd.github.io
-static landing page
+# blmd.mn
+
+wack shit

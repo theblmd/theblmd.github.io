@@ -1,5 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="B.L.M.D music collective web space">
+    <meta name="keywords" content="BLMD, Балмад, Trip Hop, Rap, Experimental, Mongolia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="vonqo">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B.L.M.D</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <script language="javascript" type="text/javascript" src="./js/libs/p5js/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./js/glitch/glitch.js"></script>
+  </head>
   <body>
-    Test, 4,5,6,7,8
+    <main>
+      <div id="container"></div>
+      <div class="media-container">
+        <div class="youtube-container">
+          <iframe style="border-radius:12px; width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/UcTi-rCYp6s?si=ZmNXpoCk_tUfR7Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="spotify-container">
+          <iframe style="border-radius:12px; width: 100%; aspect-ratio: 4 / 1;" src="https://open.spotify.com/embed/track/0cC3EeoKlR6ddHHSoBlyms?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="connect">
+        <div>Connect with us?</div><a target="_blank" href="https://linktr.ee/theblmd">Links @Linktree</a>
+      </div>
+      <div class="bottom-text">
+        © 2024 B.L.M.D 
+      </div>
+    </footer>
+
+    <script language="javascript" type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        let buffer;
+
+        const canvas = document.getElementById("container");
+        canvas.innerHTML = '';
+
+        if(buffer !== undefined) {
+            buffer.remove();
+        } else {
+            buffer = new p5(glitch, "container");
+        }
+      });
+    </script>
   </body>
 </html>
